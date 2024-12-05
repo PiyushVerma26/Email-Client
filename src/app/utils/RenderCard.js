@@ -1,4 +1,5 @@
 import Card from "../Card";
+import FormatDate from "./dateFormatter";
 const leftSection = document.querySelector("#left");
 const rightSection = document.querySelector("#right");
 
@@ -20,14 +21,13 @@ function RenderCard(data) {
       },
     ];
 
-    const date = new Date(item?.date);
-    const localTime = date.toLocaleString();
+    const formattedDateTime = FormatDate(item?.date);
 
     const cardDiv = Card(
       top,
       item?.short_description,
       item.from.name.slice(0, 1),
-      localTime,
+      formattedDateTime,
       item.id
     );
 

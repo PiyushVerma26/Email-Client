@@ -12,7 +12,7 @@ function Card(top, short_description, leftText, date, id) {
   isRead ? (bgColor = "#F2F2F2") : (bgColor = "white");
   // Creates A Card
   const mailCard = document.createElement("section");
-  mailCard.classList.add("leftCard");
+  mailCard.classList.add("mailCard");
   mailCard.style.backgroundColor = bgColor;
   mailCard.setAttribute("id", id);
 

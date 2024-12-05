@@ -2,7 +2,7 @@ import labelValue from "../labelValue";
 import createDropDown from "../utils/createDropDown";
 
 function showSingleMailDetailToDom(content, detail, mailDetailId) {
-  const rightSection = document.querySelector("#right");
+  let rightSection = document.querySelector("#right");
   rightSection.innerHTML = "";
   rightSection.style.display = "flex";
 
