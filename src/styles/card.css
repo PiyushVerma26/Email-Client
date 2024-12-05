@@ -1,0 +1,29 @@
+.leftCard {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: 2px solid #cfd2dc;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+.leftName {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: #e54065;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
